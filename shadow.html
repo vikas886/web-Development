@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX SHADOW AND TEXT SHADOW</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            /* border: 2px solid rgb(230, 45, 45); */
+            margin: 23px 12px;
+            background-color: rgb(202, 129, 77);
+
+            /* box-shadow: offset-x offset-y color; */
+                /* box-shadow: -6px 13px red; */
+
+
+            /* box-shadow: offset-x offset-y  blur-radius spread-radiuscolor; */
+            /* box-shadow: 5px 5px 60px forestgreen; */
+            /* box-shadow: 7px 7px 45px 55px firebrick; */
+
+            /* box-shadow: inset 3px 4px blueviolet; */
+
+            /* mutiple shadow */
+            box-shadow: 5px 5px green,6px 6px yellow;
+
+
+        }
+        .card h2{
+            /* text-shadow: 3px 4px red; */            
+            text-shadow: 3px 4px 6px white;            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>C++</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aspernatur libero, veritatis reprehenderit neque minus recusandae voluptas saepe, quo possimus officia, ea cumque similique? Mollitia beatae quasi accusantium aspernatur dolorem.
+          </p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>HTML</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aspernatur libero, veritatis reprehenderit neque minus recusandae voluptas saepe, quo possimus officia, ea cumque similique? Mollitia beatae quasi accusantium aspernatur dolorem.
+            </p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>JAVA</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aspernatur libero, veritatis reprehenderit neque minus recusandae voluptas saepe, quo possimus officia, ea cumque similique? Mollitia beatae quasi accusantium aspernatur dolorem.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

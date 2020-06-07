@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow</title>
+</head>
+<body>
+    <div class="container">
+        this  is arrow tutorial
+    </div>
+    <script>
+        let greet=()=>{
+            console.log("inside arrow");
+        };
+
+        // let sum=(a,b)=>{
+        //     return a+b;
+        // }
+
+        // let sum1=(a,b)=>a+b;
+
+        let half=a=>a/2;
+
+        // function greet(){
+        //     console.log("Good morning");
+        // }
+        greet();
+        setTimeout(() => {
+            console.log("we are inside setTime out");
+        }, 3000);
+
+        let obj={
+            names:["vikas","rahul","sameer","mohan"],
+            greeting:"Good Morning",
+            speak(){
+                this.names.forEach((student)=>{
+                   console.log(this.greeting +"kukudko "+ student);
+                });
+            }
+        }
+        obj.speak();
+    </script>
+</body>
+</html>

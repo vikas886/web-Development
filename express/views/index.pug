@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+    style
+        include ../static/style.css
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact Us</a></li>
+            <li><a href="/">Services</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <h2>
+            Get Gym mambership for 60$-Fill this form Now
+        |<!-- |    #{content} -->
+        </h2>
+       
+        <form action="/" method="POST" id="contact">
+            <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            <input type="text" name="age" id="age" placeholder="Enter Your age">
+            <input type="text" name="gender" id="gender" placeholder="Enter Your Gender">
+
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your address"></textarea>
+
+            <textarea name="more" id="" cols="30" rows="10" placeholder="More about you"></textarea>
+            <input type="submit" class="btn">
+        </form>
+    </div>
+</body>
+</html>

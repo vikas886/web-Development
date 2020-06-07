@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events:</title>
+    <style>
+        .container{
+            background-color: burlywood;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #btn{
+            display: flex;
+            background-color: rgb(246, 0, 0);
+            color: black;
+            cursor: pointer;
+            border-radius: 10px;
+            padding: 7px 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Event listener: -->
+    <!-- click
+    contextmenu
+    mouseover
+    mouseout
+    mousedown/mouseup
+    mosemove
+
+    submit
+    focus
+    DOMContentLoaded
+
+    transitionend -->
+
+    <div class="container">
+        <h1>this is heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore assumenda cumque accusantium vel nulla nemo, dolores enim, cum, illum ducimus eius ipsa ad ipsum recusandae earum nisi! Voluptatem, porro voluptate.
+        Alias iusto consequatur, repellat eaque cumque accusantium a ex distinctio minima quibusdam harum esse ipsam nobis perspiciatis sequi consectetur eum aliquid corrupti eligendi ea soluta magni laborum incidunt. Ullam, temporibus.
+        Vero deleniti, tempore illum maxime perspiciatis nam blanditiis est ea soluta iure pariatur recusandae omnis fugiat id dolores nostrum ab quo in molestias sint! Voluptatum autem minus dicta error officia?</p>
+    </div>
+    <button id="btn" onclick="togglehide()">show/hide</button>
+    <script>
+        let para=document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            alert('Mouse Inside');
+        });
+
+        para.addEventListener('mouseout',function run(){
+            alert('Mouse Outside');
+        });
+       function togglehide(){
+           let btn=document.getElementById('btn');
+           let para=document.getElementById('para');
+           if(para.style.display!='none'){
+               para.style.display='none';
+           }
+           else{
+            para.style.display='block';
+           }
+
+
+       }
+
+    </script>
+</body>
+</html>

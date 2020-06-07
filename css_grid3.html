@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer '
+            ;
+        }
+        .item{
+            background-color: yellow;
+            border: 2px solid black;
+            padding: 20px 25px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+          home about contact_us
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, molestiae. Libero totam, id voluptate sequi tenetur quis error blanditiis iure! Eos commodi deleniti error earum, repellat tempore quidem nemo cum Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem molestiae quia harum est dolores quam quisquam ipsa aut enim et at, rerum recusandae asperiores ea, porro, dolor quibusdam sit in!
+            Explicabo, veniam enim necessitatibus, dignissimos voluptas iusto autem officia animi accusamus laudantium laborum ullam! Iure ratione nesciunt, nulla repellat temporibus, nihil neque placeat inventore, eaque hic dolorum ab enim natus.
+            Hic placeat nam deleniti nisi autem quasi consectetur debitis quisquam reiciendis corrupti, provident, ipsa iste adipisci aliquid? Quo, fuga. Reprehenderit maxime ad eos quibusdam omnis. Quos eaque velit maxime laboriosam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa exercitationem tempore velit consequuntur, non ratione totam aperiam ad omnis similique harum quis aspernatur facilis ut reiciendis architecto itaque dignissimos. Amet.Possimus, optio qui sequi totam corporis sapiente unde laudantium expedita voluptatum voluptatibus? Assumenda ex nesciunt deleniti alias cumque atque reprehenderit repellat veniam placeat incidunt perspiciatis, iusto, officiis earum non minus.
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas soluta dolor rerum! Iusto, quae beatae itaque quaerat non voluptates repellat omnis atque harum ad culpa ullam et tempore error quo.Accusamus, enim. Necessitatibus ducimus nam in, ipsa quis doloremque? Doloribus quos veritatis alias ratione consequatur enim ipsum, minima magnam nihil quas veniam nobis eveniet tenetur amet odit praesentium. Qui, deleniti! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum corrupti consequatur saepe temporibus modi voluptas earum enim similique quos illum, nostrum illo quasi iusto, iure libero adipisci soluta sed suscipit?Quidem fuga magnam qui sed repellat! Placeat, sapiente illo. At sint illo quasi voluptates, omnis non. Commodi voluptates deserunt quas voluptate iste, distinctio cum recusandae voluptatibus nisi sit, ex dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ut provident sunt quisquam consequatur, perferendis mollitia hic odit. Modi eum sit asperiores aspernatur qui harum consectetur ipsam sed magnam autem!Autem et commodi, assumenda ex porro exercitationem possimus? Eveniet saepe, laboriosam facilis nisi fuga reiciendis at perspiciatis beatae mollitia, quam excepturi illum velit accusantium minima tenetur magni voluptates maiores magnam?
+        </div>
+        <footer class="item">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, repellat. Necessitatibus et molestiae sapiente vitae, atque quidem ducimus harum earum delectus commodi incidunt omnis mollitia iusto.
+        </footer>
+    </div>
+</body>
+</html>

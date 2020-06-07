@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Date /Time</title>
+    <style>
+.container{
+  font-size: 23px;
+  background-color: blanchedalmond;
+  border: 2px solid black;
+  padding: 34px;
+  margin: 4px;
+  text-align: center;
+}
+#time{
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        Time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("this is data and time tutorial:")
+        let now =new Date();
+        console.log(now);
+
+        // let dt =new Date(0);
+        // console.log(dt);
+
+        // let newdate =new Date("2029-09-30");
+        // console.log(newdate);
+
+        // let newdate =new Date(2020,1,4,6,23,33,3);
+        // console.log(newdate);
+
+        // let yr=newdate.getFullYear();
+        // console.log("year is ",yr);
+
+        // let dat=newdate.getDate();
+        // console.log("Date is ",dat);
+
+        // newdate.setDate(12);
+        // console.log(newdate);
+        setInterval(updateTime,1000);
+        function updateTime(){
+            time.innerHTML=new Date();
+        }
+    </script>
+</body>
+</html>

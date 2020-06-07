@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS VARIABLES/CUSTOM PROPERTY</title>
+    <style>
+        :root{
+            --primary-color:red;
+            --secondary-color:pink;
+        }
+        .container{
+            display: flex;
+            background-color: var(--secondary-color);
+        }
+        .box{
+            --box-color:rgb(157, 185, 0);
+            --box-scolor:green;
+        width:200px;
+        height:200px;
+        background-color:var(--box-color);
+        border: 2px solid red;
+        box-shadow: 3px 9px var(--box-scolor);
+        margin: 2px 9px;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

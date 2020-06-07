@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid +Media Quries</title>
+   
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+
+    }
+
+    @media only screen and(max-width: 300px) {
+        body{
+            background-color: blueviolet;
+        }
+    }
+
+    @media only screen and(min-width: 300px) and (max-width:500px) {
+        body {
+            /* display: block; */
+            background-color: rgb(226, 223, 43);
+        }
+    }
+
+    @media only screen and(max-width: 500px)and (max-width:800px) {
+        body {
+            /* display: block; */
+            background-color: rgb(70, 226, 43);
+        }
+    }
+
+    @media only screen and(min-width:800px) {
+        body {
+            /* display: block; */
+            background-color: rgb(226, 43, 171);
+        }
+    }
+
+    .bdr {
+        border: 2px solid black;
+        padding: 23px;
+        background-color: wheat;
+    }
+</style>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            home about contact
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS </h2>
+        </section>
+        <aside class="bdr">
+            <h1>More about us</h1>
+        </aside>
+    </div>
+</body>
+
+</html>

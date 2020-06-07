@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai 2' rel='stylesheet'>
+    <style>
+        /* CSS reset */
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/v.jpg');
+            /* height: 4554px; */
+            color: white;
+        }
+
+        .left {
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid red; */
+
+        }
+
+        .left img {
+            width: 136px;
+            filter: invert(100%);
+            padding-left: 16px;
+        }
+
+        .left div {
+            text-align: center;
+            color: #ff6a31
+            font-weight: bold;
+            line-height: 19px;
+            font-size: 25px;
+
+        }
+
+        .mid {
+            display: block;
+            width: 55%;
+            margin: 20px auto;
+            /* border: 2px solid rgb(55, 248, 7); */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 32px;
+            display: inline-block;
+            /* border: 2px solid rgb(230, 255, 7); */
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 16px;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 22px;
+            font-weight: bold;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color:#ff6a31;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .btn:hover {
+            background-color:#ff6a31;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 100px 380px;
+            padding: 32px 35px;
+            width: 33%;
+            border-radius: 30px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 388px;
+            padding: 1px;
+            border: 2px solid black;
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 6px auto;
+            font-size: 20px;
+            border-radius: 18px;
+        }
+
+        .container h1 {
+            text-align: center;
+            color: #ff6a31
+            font-size: 35px;
+            font-weight: bolder;
+        }
+
+        .container button {
+            display: block;
+            width: 350px;
+            padding: 5px;
+            margin: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/gym1.jpg" alt="">
+            <div>VISHA'S FITNESS</div>
+        </div>
+        <!-- mid box for nevigation bar -->
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="active">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">FITNESS CALCULATOR</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <!-- right box buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>JOIN THE GYM</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="myname" placeholder="ENTER NAME">
+            </div>
+            <div class="form-group">
+                <input type="email" name="myemail" placeholder="ENTER EMAIL">
+            </div>
+            <div class="form-group">
+                <input type="number" name="myNUMBER" placeholder="ENTER PHONE">
+            </div>
+            <div class="form-group">
+                <input type="date" name="myage" placeholder="ENTER DOB">
+            </div>
+            <div class="form-group">
+                <input type="text" name="mygender" placeholder="ENTER GENDER">
+            </div>
+            <div class="form-group">
+                <input type="text" name="mylocation" placeholder="ENTER LOCALITY">
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+</body>
+<!-- https://colorlib.com/preview/#gymlife -->
+</html>

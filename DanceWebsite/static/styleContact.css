@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Yeon+Sung&display=swap');
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+h1{
+    text-align: center;
+    margin: 24px;
+    font-family: 'Roboto Mono', monospace;;
+}
+.container{
+    min-height: 77vh;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.myInput{
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border: 2px solid #7b5454;
+    border-radius: 10px;
+    outline: none;
+}
+.btn{
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 2px solid red;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 7%;
+    outline: none;
+}
+.btn:hover{
+    border: 2px solid black;
+    background-color: rgb(255, 95, 95);
+    color: rgb(0, 0, 0);
+    
+}

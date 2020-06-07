@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION AND KEYFRAMES</title>
+    <style>
+        .container {
+            background-color: chartreuse;
+        }
+
+        .box {
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            /* animation-name: vikas1; */
+            animation-name: vikas2;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            /* animation-fill-mode: alternate; */
+            /* animation-timing-function: ease-in; */
+            /* animation-delay: 3s; */
+            /* animation-direction: alternate-reverse; */
+            
+            /* animation: animation-name animation-duration animation-timig-functiom animation-delay amination-itaration-count animation-fill-mode; */
+
+        }
+        @keyframes vikas2 {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+            } 
+            100%{
+                top: 0px;
+                left: 250px;
+            }           
+        }
+
+        @keyframes vikas1 {
+            from {
+                width: 200px;
+
+            }
+
+            to {
+                width: 1400px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            THIS IS A BOX
+        </div>
+    </div>
+
+</body>
+
+</html>

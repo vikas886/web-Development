@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem ab commodi consectetur numquam, qui ullam nihil animi illo, quam tenetur, dolorem saepe nemo! Commodi quidem adipisci atque doloremque praesentium.
+        Eveniet, deleniti illo enim dolor voluptate eaque distinctio ipsa quaerat ex architecto quo cum voluptatum, veritatis, nobis et nisi maxime eius deserunt? Nesciunt voluptatibus commodi veritatis, ad consequatur aliquam perferendis!
+        Est molestias sunt ipsum, vitae fugit aperiam adipisci dolorem ipsa sequi, fugiat aspernatur unde accusantium. Possimus ab doloremque repellat amet explicabo expedita error sequi dolorum consequatur perspiciatis consectetur, deserunt incidunt.</p>
+    </div>
+    <script>
+        let jsObj={
+            name:"vikas",
+            age:23,
+            friend:"yogesh",
+            food:"Paneer",
+        }
+        console.log(jsObj);
+
+        let myJsonstr=JSON.stringify(jsObj);
+        console.log(myJsonstr);
+
+        myJsonstr=myJsonstr.replace("vikas","mishra");
+        console.log(myJsonstr);
+
+        let myjsobj=JSON.parse(myJsonstr);
+        console.log(myjsobj);
+    </script>
+</body>
+</html>

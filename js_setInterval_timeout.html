@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS setInterval ,setTimeOut,clearTimeOut</title>
+</head>
+<body>
+    <div class="container">
+        Time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("this is tutorial js");
+
+        // setTimeout-->Allows us to rum the function once after the interval of time
+        // clearTimeout-->Allows us to rum the function repeatedly after the interval of time
+        function greet(name){
+            console.log(`Hello Good Morning ${name}`);
+        }
+        // let timeOut=setTimeout(greet,5000,"vikas");   
+        // console.log(timeOut);
+
+        // clearTimeout(timeOut);
+
+    //    let intervalid= setInterval(greet,2000,"vikas");
+    //    clearInterval(intervalid);
+
+        function displayTime(){
+            let time=new Date();
+           console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(displayTime, 1000);
+    
+   
+   </script>
+</body>
+</html>

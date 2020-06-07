@@ -1,0 +1,43 @@
+extends base.pug
+
+block scripts
+    script(src="/static/index.js")
+
+block style
+    style
+        include ../static/style.css
+
+block content
+        section#introSection
+            div Welcome to Vikas's Dance Academy
+            div.small Eat Sleep DANCE Repeat
+        section#missionSection
+            h2 Our Mission
+            div.card
+                h3 Dance Perfection
+                 div.card-box
+                    div.card-img
+                        img(src="/static/img/download.png", alt="")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit tempora dolore et.    
+            div.card
+                h3 Dance the way you like
+                  div.card-box
+                    div.card-img
+                        img(src="/static/img/images.png", alt="")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit tempora dolore et. 
+            div.card
+                h3 Expert Teaching
+                 div.card-box
+                    div.card-img
+                        img(src="/static/img/images.png", alt="")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit tempora dolore et. 
+        section#sponsorSection
+            h2 Our Sponsors
+            div#sponsor
+                img(src="/static/img/applelogo.png", alt="Sponsor Image",class="spImage")
+                img(src="/static/img/hplogo.png", alt="Sponsor Image",class="spImage")
+                img(src="/static/img/micrologo.png", alt="Sponsor Image",class="spImage")
+                img(src="/static/img/skypelogo.png", alt="Sponsor Image",class="spImage")

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script scope and conditions</title>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li class="item">item-1</li>
+            <li class="item">item-2</li>
+            <li class="item">item-3</li>
+            <li class="item">item-4</li>
+        </ul>
+    </div>
+    <script>
+        // let a='this is copy';
+
+        // {
+        //     let a='this is new copy';
+        //     console.log(a);
+        // }
+        // console.log(a);
+        // const a='this can not be changed';
+        // console.log(a);
+
+        // let age=34;
+        // if(age>18){
+        //     console.log('you can drink water');
+        // }
+        // else if(age==2){
+        //     console.log("age is 2");
+        // }
+        // else{
+        //     console.log('you can drink cold drink');
+        // }
+
+        const cups=45;
+        switch (cups) {
+            case 4:
+                console.log('the value of cups is 4');
+                break;
+            case 44:
+                console.log('the value of cups is 44');
+                break;
+            case 45:
+                console.log('the value of cups is 45');
+                break;
+            case 50:
+                console.log('the value of cups is 50');
+                break;
+            default:
+                console.log('the value of cups non of the above:');
+                break;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORE On SELECTORS</title>
+    <style>
+       h1{
+           background-color: tomato;
+           color: yellow;
+           text-align: center;
+       }
+       /* div p{
+           background-color: green;
+           color: hotpink;
+       } */
+       /* div li p{
+           background-color: purple;
+           color: black;
+       } */
+       /* div >p{
+           background-color: purple;
+           color: black;
+       } */
+         div +p{
+           background-color: purple;
+           color: black;
+        } 
+       
+
+    </style>
+</head>
+<body>
+    <h1>This is heading for selector</h1>
+    <div class="container">
+        <div class="box">
+            <ul>
+                <li id="me"><p>para inside ul</p></li>
+            </ul>
+            <ul>
+                <li id="me1"><p>para inside ul</p></li>
+            </ul>
+            <p>this is para inside box</p>
+        </div>
+        <p>this is another para</p>
+    </div>
+    <p>ootter para</p>
+</body>
+</html>
